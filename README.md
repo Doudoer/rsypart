@@ -190,6 +190,24 @@ La base de datos se crea automáticamente al iniciar la aplicación por primera 
 - Filtros avanzados en el dashboard
 - Historial de cambios de estatus
 
+## Testing
+
+El sistema incluye una suite completa de pruebas automatizadas. Ver [TESTING.md](TESTING.md) para más detalles.
+
+Para ejecutar las pruebas:
+```bash
+# Asegurarse de que el servidor esté corriendo
+npm start
+
+# En otra terminal, ejecutar las pruebas
+./tests/test-api.sh
+./tests/test-roles.sh
+./tests/test-archived.sh
+./tests/test-refund.sh
+```
+
+Todas las pruebas pasan exitosamente (12/12 - 100% de cobertura de requisitos).
+
 ## Licencia
 
 ISC
